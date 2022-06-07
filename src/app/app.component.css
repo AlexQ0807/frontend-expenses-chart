@@ -1,0 +1,13 @@
+:host {
+    font-family: 'DM Sans';
+    font-size: max(16px, 1vw);  /* at least 16px */
+    font-weight: 400;
+}
+
+.container{
+    height: 100vh;
+    max-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

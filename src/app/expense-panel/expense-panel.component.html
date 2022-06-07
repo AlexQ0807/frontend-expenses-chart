@@ -1,0 +1,41 @@
+<div class="expense-panel">
+    <div class="expense-box total-section">
+        <div class="balance-block content-padding">
+            <div class="balance-label">My Balance</div>
+            <div class="balance-amount">$921.28</div>
+        </div>
+        <div class="balance-logo content-padding">
+            <img src="/assets/images/logo.svg" alt="logo">
+        </div>
+    </div>
+    <div class="section-break"></div>
+    <div class="expense-box chart-section">
+        <div class="content-padding">
+            <div class="chart-title" >Spending - Last 7 days</div>
+            <div class="chart-content">
+                <div class="chart-bars" *ngFor="let item of expenseData; let i = index">
+                    <div class="chart-amount" [ngClass]="expenseData[i].hide ? 'hide' : ''"><span>${{item.amount}}</span></div>
+                    <div class="chart-bar" [style.height]="item.barSize" 
+                        (mouseover)="mouseOverEvent(i)"
+                        (mouseout)="mouseOutEvent(i)">
+                    </div>
+                    <span class="chart-legend">{{item.day}}</span>
+                </div>
+            </div>
+        </div>
+        <div class="content-padding"><hr class="line-break"></div>
+        <div class="spending-block content-padding">
+            <div class="month-total">
+                <span class="month-total-label">Total this month</span><br>
+                <span class="month-total-value">$478.33</span>
+            </div>
+            <div class="month-rate">
+                <span class="month-rate-value">+2.4 %</span><br>
+                <span class="month-rate-label">from last month</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+

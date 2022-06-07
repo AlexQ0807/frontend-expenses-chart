@@ -1,0 +1,122 @@
+.expense-panel{
+    display: flex;
+    flex-direction: column;
+}
+
+.expense-box{
+    width: max(40vw, 300px);
+    border-radius: 10px;
+}
+
+.section-break{
+    margin-top: 2vh;
+}
+
+.total-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: max(10vh, 100px);
+    background-color: hsl(10, 79%, 65%);
+}
+
+.content-padding {
+    padding: 2vh 1vw 0 1vw;
+}
+
+.balance-block{
+    color: white;
+}
+
+.balance-label{
+    margin-bottom: 1vh;
+    font-size: max(16px, 1vw);
+}
+
+.balance-amount{
+    font-size: max(20px, 2vw);
+}
+
+.chart-section{
+    height: max(40vh, 400px);
+    background-color: hsl(33, 100%, 98%);
+}
+
+.spending-block{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.month-total-value{
+    color: hsl(25, 47%, 15%);
+    font-size: max(28px, 2.6vw);  /* will be at least 30px */
+    font-weight: 700;
+}
+
+.month-rate{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: flex-end;
+}
+
+.month-rate-value{
+    color: hsl(25, 47%, 15%);
+    font-weight: 700;
+}
+
+.month-total-label, .month-rate-label, .chart-legend {
+    color:  gray;
+}
+
+
+.chart-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.chart-bars{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    text-align: center;
+    height: min(50vw, 200px);
+    width: max(4vw, 50px);                /* width of bar */
+    margin: 0 0.8vw;             /* spacing of bar */
+}
+
+
+.chart-title{
+    font-size: max(20px, 2vw);
+    font-weight: 700;
+}
+
+.chart-amount{
+    color: hsl(33, 100%, 98%);
+    background-color: hsl(25, 47%, 15%);
+    border-radius: 3px;
+    margin-bottom: 1vh;
+}
+
+.chart-bar{
+    min-height: 2px;
+    border-radius: 7px;
+    background-color: hsl(10, 79%, 65%);
+}
+
+.chart-bar:hover{
+    background-color: hsl(186, 34%, 60%);
+    cursor: pointer;
+}
+
+.line-break{
+    margin-top: 1.6vh;
+    margin-bottom: 0.7vh;
+    color: hsl(27, 66%, 92%);
+}
+
+.hide{
+    display: none;
+}
