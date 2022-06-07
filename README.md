@@ -14,6 +14,8 @@ Users should be able to:
 - See hover states for all interactive elements on the page
 - **Bonus**: Use the JSON data file provided to dynamically size the bars on the chart
 
+Live Demo: https://frontend-expenses-chart.pages.dev/
+
 
 ## Development server
 
